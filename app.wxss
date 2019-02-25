@@ -1,0 +1,252 @@
+/**app.wxss**/
+
+view, text, input, button, textarea {
+  /* font-family: "思源黑体"; */
+  font-family: -apple-system-font, Helvetica Neue, Helvetica, sans-serif;
+}
+
+button::after {
+  border: none;
+}
+.row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.row_start{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+button {
+  border-radius: 0;
+  padding: 0;
+  background-color: transparent;
+  line-height: 0;
+  /* background: #fff; */
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.button-hover {
+  background-color: transparent;
+}
+
+/* 上小线 */
+
+.t-line {
+  position: absolute;
+  top: 0rpx;
+  left: -116%;
+  width: 332%;
+  height: 1px;
+  background-color: #d2d2d2;
+  transform: scale(0.3);
+  -webkit-transform: scale(0.3);
+  -moz-transform: scale(0.3);
+  -ms-transform: scale(0.3);
+}
+
+/* 下小线 */
+
+.b-line {
+  position: absolute;
+  bottom: 0rpx;
+  left: -116%;
+  width: 332%;
+  height: 1px;
+  background-color: #d2d2d2;
+  transform: scale(0.3);
+  -webkit-transform: scale(0.3);
+  -moz-transform: scale(0.3);
+  -ms-transform: scale(0.3);
+}
+
+/* 右小线 */
+
+.r-line {
+  position: absolute;
+  top: -50%;
+  right: 0;
+  width: 1px;
+  height: 200%;
+  background-color: #d2d2d2;
+  transform: scale(0.5);
+  -webkit-transform: scale(0.5);
+  -moz-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+}
+
+/* 封装05 文本超出隐藏 */
+
+.hd-text {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* 封装05-1 两行或多行文本超出隐藏 */
+
+.more_row_hidden {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+/* 封装10 顶部横线 */
+
+.top-line {
+  width: 100%;
+  height: 2rpx;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #e9e9e9;
+  z-index: 2;
+}
+
+/* 封装11 不出现滚动条 */
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+/* 惯性滚动 ios端媲美原生app体验*/
+
+.scroll-fn {
+  -webkit-overflow-scrolling: touch;
+}
+
+/*加载中  */
+
+.bottom_jiazai image {
+  width: 30rpx;
+  height: 30rpx;
+  vertical-align: middle;
+  margin-top: -5rpx;
+  margin-right: 10rpx;
+}
+
+.bottom_jiazai {
+  position: relative;
+  font-size: 12px;
+  text-align: center;
+  color: #999;
+  line-height: 30px;
+  z-index: 1;
+}
+
+.bottom_jiazai view {
+  position: absolute;
+  width: 75%;
+  height: 1px;
+  top: 14px;
+  left: 50%;
+  margin-left: -37.5%;
+  z-index: -1;
+}
+
+.bottom_jiazai .no {
+  padding: 0px 8px;
+}
+
+/* 弹窗 */
+
+.window {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  transition: all 0.3s;
+  z-index: 200;
+}
+
+/* 让元素居中 */
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: column; */
+}
+
+/* 弹窗 动画 */
+
+@keyframes animate {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+  }
+
+  70% {
+    transform: translate(-50%, -50%) scale(1.05);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes back {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  30% {
+    transform: translate(-50%, -50%) scale(1.05);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(0);
+  }
+}
+
+/* 页面没有信息1 */
+
+.none-box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  height: 280rpx;
+  transform: translate(-50%, -50%);
+}
+
+.none-img image {
+  width: 100%;
+  height: 195rpx;
+}
+
+.none-txt {
+  font-size: 26rpx;
+  color: #999;
+  text-align: center;
+}
+
+/* 页面没有信息2 */
+
+.none-box1 {
+  /* position: absolute;
+  left: 50%;
+  top: 50%; */
+  margin-top: 30rpx;
+  width: 100%;
+  height: 280rpx;
+  /* transform: translate(-50%,-50%);   */
+}

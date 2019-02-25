@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/path1/path1",
+    "pages/path2/path2",
+    "pages/path3/path3",
+    "pages/path4/path4",
+    "pages/path5/path5",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Jacky的库",
+    "navigationBarTextStyle": "black"
+  }
+}

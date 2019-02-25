@@ -1,0 +1,12 @@
+<view class='Jacky-index'>
+  <view class='header'>
+    <text>Jacky组件库</text>
+  </view>
+  <view class='container between'>
+    <block wx:for="{{itemList}}" wx:key="{{item}}">
+      <view class='item row' catchtap='toPage' data-path="{{item.path}}">
+        <text>{{item.text}}</text>
+      </view>
+    </block>
+  </view>
+</view>

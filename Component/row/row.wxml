@@ -1,0 +1,4 @@
+<view class='lay-row row' catchtap='operating'>
+  <text>{{text}}</text>
+  <image src='./images/row-arrow.png'></image>
+</view>

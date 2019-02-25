@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "功能组件",
+  "usingComponents": {
+    "ImgUpload": "/Component/ImgUpload/ImgUpload"
+  }
+}

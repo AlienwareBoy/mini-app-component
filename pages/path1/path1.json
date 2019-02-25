@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "基础组件",
+  "usingComponents": {
+    "row": "/Component/row/row"
+  }
+}

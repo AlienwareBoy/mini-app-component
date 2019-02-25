@@ -1,0 +1,21 @@
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.lay-row {
+  background: #fff;
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+
+.lay-row text {
+  font-size: 29rpx;
+  color: #999;
+}
+
+.lay-row image {
+  width: 14rpx;
+  height: 24rpx;
+}

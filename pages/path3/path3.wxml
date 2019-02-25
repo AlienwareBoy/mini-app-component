@@ -1,0 +1,7 @@
+<view class='path3'>
+  <!-- 上传图片 -->
+  <view class='container'>
+    <view class='title'>上传图片(多张，单张)</view>
+    <ImgUpload imgNums='{{imgNums}}' bind:imgList="imgUpload"></ImgUpload>
+  </view>
+</view>

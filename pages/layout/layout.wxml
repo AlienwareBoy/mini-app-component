@@ -1,0 +1,3 @@
+<view class='layout'>
+  <row text='张三' bind:rowEvent='rowEvent'></row>
+</view>
