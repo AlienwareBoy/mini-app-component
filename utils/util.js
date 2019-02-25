@@ -1,19 +1,60 @@
-const formatTime = date => {
-  const year = date.getFullYear()
-  const month = date.getMonth() + 1
-  const day = date.getDate()
-  const hour = date.getHours()
-  const minute = date.getMinutes()
-  const second = date.getSeconds()
-
-  return [year, month, day].map(formatNumber).join('/') + ' ' + [hour, minute, second].map(formatNumber).join(':')
+function chooseAddresss() {
+  return new Promise((resolve, reject) => {
+    wx.chooseAddress({
+      success(res) {
+        resolve(res)
+      }
+    })
+  })
 }
 
-const formatNumber = n => {
-  n = n.toString()
-  return n[1] ? n : '0' + n
+function MiniApi(name, obj) {
+  switch (name) {
+    case 'showModel':
+      return showModal(obj)
+  }
 }
 
+function openSetting() {
+  return new Promise((resolve, reject) => {
+    wx.openSetting({
+      success(res) {
+        resolve(res)
+      }
+    })
+  })
+}
+
+function showModal(obj) {
+  console.log(obj)
+  let options = {
+    title: obj.title == undefined ? '温馨提示' : obj.title,
+    content: obj.content == undefined ? '温馨提示' : obj.content,
+    showCancel: obj.showCancel == undefined ? '温馨提示' : obj.content,
+  }
+  for (let i in options) {
+    if (options[i] != obj[i]) {
+      obj[i] = options[i]
+    }
+  }
+  console.log(obj)
+  return new Promise((resolve, reject) => {
+    wx.showModal({
+      title: obj.title,
+      content: obj.content,
+      showCancel: obj.showCancel,
+      success(res) {
+        if (res.confirm) {
+          resolve('点击确定')
+        } else if (res.cancel) {
+          reject('点击失败')
+        }
+      }
+    })
+  })
+}
 module.exports = {
-  formatTime: formatTime
+  chooseAddresss,
+  MiniApi,
+  openSetting
 }

@@ -10,12 +10,35 @@ page {
 
 .container {
   background: #fff;
-  padding:28rpx 26rpx;
+  padding: 28rpx 26rpx;
+  margin-bottom: 30rpx;
 }
 
-.title{
+.title {
   font-size: 30rpx;
   font-weight: 600;
   margin-bottom: 20rpx;
   color: #999;
+}
+
+.getAddresss {
+  height: 80rpx;
+  background: #fb4949;
+  border-radius: 10rpx;
+  font-size: 29rpx;
+  color: #fff;
+}
+
+.address text:nth-child(2) {
+  font-size: 29rpx;
+  color: #000;
+  margin-top: 42rpx;
+  display: block;
+}
+
+.address text:nth-child(3) {
+  font-size: 29rpx;
+  color: #000;
+  display: block;
+  margin-top: 22rpx;
 }

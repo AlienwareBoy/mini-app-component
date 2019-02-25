@@ -1,7 +1,6 @@
 import {
   chooseImage,
   uploadFile,
-  https
 } from './assist.js'
 Component({
   /**
@@ -11,8 +10,8 @@ Component({
     imgNums: {
       type: Number //限制上传的图片张数
     },
-    imgList: {
-      type: Array //返回给父组件的已上传图片数组
+    api: {
+      type: String
     }
   },
 
@@ -51,7 +50,7 @@ Component({
             icon: 'none'
           })
           for (let i = 0; i < res.length; i++) {
-            List[i] = uploadFile(https, res[i])
+            List[i] = uploadFile(api, res[i])
           }
           Promise.all(List).then(res => {
             wx.hideLoading()
