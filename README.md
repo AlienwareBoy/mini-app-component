@@ -1,16 +1,41 @@
 
-自述
-1.自用组件库
-=======
-# 使用之前
-  使用者需要先熟悉[微信小程序自定义组件](https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/) 的相关操作
-  # 目录
+
+
+
+# 项目简介
+
+**本项目用于速龙小队快速构建小程序，使用原生小程序代码进行编写，UI规范基于小程序webUI进行操作，出于快速迭代的目的，我们将常用的小程序API全部Promise化，常用的布局组件规范化**
+
+
+[TOC]
+
+
+# 目录
+
+##  UI规范  
+>     字体
+>>    字体以18,20,32,40为准  
+
+>     颜色
+>>    主色调为
+  ### 表单组件
+      2.主要统一了input的表现形式
+  ### 布局组件
+
+  ### 微信功能组件
+ 
+1. 项目分类
+<!-- ###  UI规范 -->
+
+
+  <!-- 使用者需要先熟悉[微信小程序自定义组件](https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/) 的相关操作 -->
+  <!-- # 目录
     ## 功能组件
     ### 图片上传
     1. 核心逻辑 小程序图片上传只能一张一张的上传，这是无法修改的，但是我们可以通过Promise，所有图片都上传完了之后统一再处理，此处利用了Promise.all
      ### 使用微信自带的地址
-    1. 需要通过getSetting提前获取授权判断是否同意获取地址
-    2. 不同意则用wx.openSetting,该接口需要用button触发,有两种方式,open-type,还有一种是点击后 就可以触发openSetting,
+    2. 需要通过getSetting提前获取授权判断是否同意获取地址
+    3. 不同意则用wx.openSetting,该接口需要用button触发,有两种方式,open-type,还有一种是点击后 就可以触发openSetting, -->
 
 
 
