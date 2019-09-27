@@ -6,11 +6,11 @@ Page({
    */
   data: {
     itemList: [{
-      text: '基础组件',
-      path: 'path1'
+      text: '表单组件',
+      path: 'formComponent'
     }, {
       text: '布局组件',
-      path: 'path2'
+        path: 'layoutComponent'
     }, {
       text: '功能组件',
       path: 'path3'
@@ -18,7 +18,7 @@ Page({
       text: '操作反馈',
       path: 'path4'
     }, {
-      text: '表单组件',
+      text: '微信功能组件',
       path: 'path5'
     }]
   },
@@ -29,10 +29,11 @@ Page({
   onLoad: function(options) {
 
   },
-  toPage(e) {
+  toPath(e) {
     let {
       path
     } = e.currentTarget.dataset;
+    console.log()
     wx.navigateTo({
       url: `../${path}/${path}`,
     })

@@ -4,7 +4,7 @@
   </view>
   <view class='container between'>
     <block wx:for="{{itemList}}" wx:key="{{item}}">
-      <view class='item row' catchtap='toPage' data-path="{{item.path}}">
+      <view class='item row' data-path="{{item.path}}" catchtap="toPath">
         <text>{{item.text}}</text>
       </view>
     </block>

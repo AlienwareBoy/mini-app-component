@@ -1,12 +1,8 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/path1/path1",
-    "pages/path2/path2",
-    "pages/path3/path3",
-    "pages/path4/path4",
-    "pages/path5/path5",
-    "pages/logs/logs"
+    "pages/formComponent/formComponent",
+    "pages/layoutComponent/layoutComponent"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -21,5 +17,6 @@
     "scope.address": {
       "desc": "地址"
     }
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }
