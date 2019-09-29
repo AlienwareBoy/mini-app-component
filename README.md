@@ -2,33 +2,23 @@
 
 
 
-# 项目简介
-
+[TOC]
+**项目简介**
 **本项目用于速龙小队快速构建小程序，使用原生小程序代码进行编写，UI规范基于小程序webUI进行操作，出于快速迭代的目的，我们将常用的小程序API全部Promise化，常用的布局组件规范化**
 
-> 后端:  寻风
-> UI: Zora
-> 前端: 笑笑先生 
+> 后端:  寻风  
+> UI: Zora  
+> 前端: 笑笑先生   
 
----
-
-[TOC]
-# 目录
-___
-##  UI规范
-*     颜色
-1.        主色调为
-## 表单组件
-*     主要统一了input的表现形式
-  ### 布局组件
-
-  ### 微信功能组件
+***
  
-1. 项目分类
+**使用者需要先熟悉**[微信小程序自定义组件](https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/) **的相关操作**
+
+
 <!-- ###  UI规范 -->
 
 
-  <!-- 使用者需要先熟悉[微信小程序自定义组件](https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/) 的相关操作 -->
+  
   <!-- # 目录
     ## 功能组件
     ### 图片上传
