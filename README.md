@@ -1,10 +1,8 @@
-
-
-
-
-[TOC]
 **项目简介**
+
 **本项目用于速龙小队快速构建小程序，使用原生小程序代码进行编写，UI规范基于小程序webUI进行操作，出于快速迭代的目的，我们将常用的小程序API全部Promise化，常用的布局组件规范化**
+
+**项目成员**
 
 > 后端:  寻风  
 > UI: Zora  
@@ -12,7 +10,7 @@
 
 ***
  
-**使用者需要先熟悉**[微信小程序自定义组件](https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/) **的相关操作**
+**使用者需要先熟悉** [微信小程序自定义组件](https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/) **的相关操作**
 
 
 <!-- ###  UI规范 -->
